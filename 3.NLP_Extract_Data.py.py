@@ -2,7 +2,7 @@ import pandas as pd
 import re
 import sys
 
-sys.path.append(f'C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/2.Enhancement/NLP')  # Replace with the actual directory
+sys.path.append(f'C:/***')  # Replace with the actual directory
 
 from NLP_BANK import *
 from NLP_DIVIDENDS import *
@@ -223,7 +223,7 @@ def apply_nlp_operations(df):
     return df
 
 base_directories = [
-    'C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/output']
+    'C:/***']
 
 for base_directory in base_directories:
     print(f"🔍 Processing directory: {base_directory}")
