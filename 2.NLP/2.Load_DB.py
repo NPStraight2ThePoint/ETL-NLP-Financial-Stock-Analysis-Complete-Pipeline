@@ -14,7 +14,7 @@ DB_PARAMS = {
             "user": "***",
             "password": "***"}
 
-engine = create_engine('postgresql+psycopg2://postgres:Arxidolemios39@localhost:5432/Simply_API_Prod')
+engine = create_engine('postgresql+psycopg2://***:****@localhost:5432/***')
 
 df.to_sql("snowflake", engine, if_exists='append', index=False)
 
