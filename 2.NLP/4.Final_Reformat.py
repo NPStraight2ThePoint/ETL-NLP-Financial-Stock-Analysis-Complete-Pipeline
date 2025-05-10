@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/output/NLP_ASX_Transposed_ASX_statements_2025-05-01.csv')
+df = pd.read_csv('C:***.csv')
 
 #df = pd.read_excel('your_file.xlsx', engine='openpyxl')
 
@@ -23,5 +23,5 @@ print(df)
 
 # Display the updated DataFrame
 print(df)
-df.to_csv('C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/output/NLP_ASX_Transposed_ASX_statements_2025-05-01.csv', index=False)
+df.to_csv('C:/***.csv', index=False)
 
