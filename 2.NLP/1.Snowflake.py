@@ -10,14 +10,13 @@ today = today.strftime("%Y-%m-%d")
 DB_PARAMS = {
             "host": "localhost",
             "port": "5432",
-            "database": "Simply_API_Prod",
-            "user": "postgres",
-            "password": "Arxidolemios39"}
+            "database": "***",
+            "user": "***",
+            "password": "***"}
 
 #Define queries
 queries = {"company_statements": "SELECT * FROM statements;"}
-#queries = {"owners": "SELECT * FROM owners where exchange = 'ASX'"}
-EXCEL_FILE = f'C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/2.Enhancement/Output/Statements_{today}.xlsx'
+EXCEL_FILE = f'C:/***/Output/Statements_{today}.xlsx'
 try:
     # Connect to PostgreSQL
     conn = psycopg2.connect(**DB_PARAMS)
@@ -34,7 +33,7 @@ finally:
 
 # Path to the exported Excel file
 input_file = EXCEL_FILE
-output_file = f'C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/2.Enhancement/Output/Snowflake_{today}.xlsx'
+output_file = f'C:/***/Output/Snowflake_{today}.xlsx'
 
 # Load the Excel file
 df = pd.read_excel(input_file, engine="openpyxl")
