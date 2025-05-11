@@ -12,7 +12,7 @@
       - Management team
       - Shareholders
       - Financials 
-            - BANK, DIVIDENDS, FUTURE, HEALTH,  MANAGEMENT  MARKET  MISC  PAST REWARDS RISKS  VALUE
+            - BANK, DIVIDENDS, FUTURE, HEALTH,  MANAGEMENT, MARKET, MISC, PAST, REWARDS, RISKS, VALUE
         
     
 2.Enhancement layer : Regex ->> Extract data from text 
@@ -55,7 +55,7 @@
 |                          | Current Profit Margin %               |                                 |                                     |                                          |                                  |                             |        
 
 
-3.Financial/Data analytics : Portfolio op·ti·miza·tion/ Attribution Analysis
+3.Analytics layer : Portfolio optimization/ Attribution Analysis
 
 ## 🧱 Factors & Metrics
 
