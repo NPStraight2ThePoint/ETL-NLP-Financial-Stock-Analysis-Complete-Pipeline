@@ -4,7 +4,7 @@ ETL-NLP for Financial stock analysis
 ETL Pipeline
 Extract from API
 Transform
-Load to PostgreSQL DV
+Load to PostgreSQL DB
 
 NLP : Regex ->> Extract data
 
