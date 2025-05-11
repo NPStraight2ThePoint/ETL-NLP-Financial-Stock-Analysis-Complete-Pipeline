@@ -23,7 +23,7 @@
 |--------------------------|---------------------------------------|---------------------------------|-------------------------------------|------------------------------------------|----------------------------------|-----------------------------|
 | Industry                 | 5 Year Earnings Growth p.a. %         | Short Term Assets               | Cash Payout Ratio (%)               | 3-Year Annual Earnings Growth Forecast % | Tenure (years)                   | 3 month weekly volatility % |
 | AVG Industry P/E         | 12 month One-Off Gain/Loss            | Long Term Liabilities           | Payout Ratio (%)                    | 3-Year Annual Market Earnings Growth %   | Yearly Compensation              | Market Cap                  |
-| P/E Ratio 2              | 1 Year Revenue Growth %               | Short Term Liabilities          | Dividend Yield %                    | Savings Rate %                           | Salary Percentage                | Last filed financials (days)|
+| P/E Ratio                | 1 Year Revenue Growth %               | Short Term Liabilities          | Dividend Yield %                    | Savings Rate %                           | Salary Percentage                | Last filed financials (days)|
 | AVG Market P/E Ratio     | Last year Net Profit margin %         | Cash Runway                     | Bottom 25% Market Dividend Yield %  | Annual Revenue Growth %                  | Bonus Percentage                 |                             |
 | Market                   | Current Net Profit Margin %           | FCF Historical Growth           | Top 25% Market Dividend Yield %     | Annual Market Revenue Growth %           | Company Share Ownership          |                             |         
 | Market 1Y Return %       | 5-year avg Earnings growth p.a.%      | D/E Ratio                       | Next Payment Date                   | Profit Growth 1Y Forecast %              | Share Ownership Value            |                             |
@@ -56,11 +56,19 @@
 
 
 3.Financial/Data analytics : Portfolio op·ti·miza·tion/ Attribution Analysis
-   Value
-   Growth
-   Past
-   Health
-   Dividend
+
+## 🧱 Factors & Metrics
+
+| 🟦 VALUE                                  | 🟨 DIVIDENDS                             | 🟪 FUTURE                       | 🟩 HEALTH                                  | 🟥 PAST PERFORMANCE                        |
+|-------------------------------------------|-------------------------------------------|----------------------------------|--------------------------------------------|---------------------------------------------|
+| Analysts 1Y Price Target                  | Bottom 25% Dividend Payers Comparison     | Earnings vs Savings Rate         | Short Term Assets vs Short Term Liabilities| Quality Earnings                            |
+| Industry Multiple Comparison              | Top 25% Dividend Payers Comparison        | Earnings vs Market               | Short Term Assets vs Long Term Liabilities | Net Profit Margins                          |
+| Market Multiple Comparison                | Dividend Stability                        | Earnings Growth                  | Net D/E Ratio                              | 5 Year Earnings Growth                      |
+| Fair Ratio Comparison (Growth, Risks etc) | Dividend Growth                           | Revenue vs Market                | D/E 5 Year Change                          | 1Y Earnings Growth vs 5Y Average            |
+| DCF Valuation                             | Earnings Dividend Coverage                | Revenue Growth                   | Operating Cash Flow Debt Coverage          | 1Y Earnings Growth vs Industry              |
+| Discount to DCF Fair Value                | FCF Dividend Coverage                     | Future ROE                       | EBIT Interest Coverage                     | ROE                                         |
+
+
 
 4. BI Visualisation
    
