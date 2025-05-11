@@ -1,13 +1,65 @@
 # ETL-NLP-Financial-Stock-Analysis-Complete-Pipeline
-ETL-NLP for Financial stock analysis
 
-ETL Pipeline
-Extract from API
-Transform
-Load to PostgreSQL DB
+1.ETL Pipeline
+   -Extract from API
+   -Transform
+   -Load to PostgreSQL DB
 
-NLP : Regex ->> Extract data
+    Data Types:
+      - Exchanges / Tickers / Status
+      - Insider Transactions
+      - MarketCap / Primary/Secondary/Tertiary Industry
+      - Management team
+      - Shareholders
+      - Financials 
+            - BANK, DIVIDENDS, FUTURE, HEALTH,  MANAGEMENT  MARKET  MISC  PAST REWARDS RISKS  VALUE
+        
+    
+2.Enhancement layer : Regex ->> Extract data from text 
 
-Financial Analyis : Portfolio op·ti·miza·tion/ Attribution Analysis
+## Financial Metrics Overview
+
+| VALUE            | PAST                              | HEALTH                         | DIVIDENDS                          | FUTURE                                  | MANAGEMENT                      | MARKET                              |
+|--------------------------|-----------------------------------|----------------------------------|-------------------------------------|------------------------------------------|----------------------------------|--------------------------------------|
+| Industry                 | 5 Year Earnings Growth p.a. %     | Short Term Assets               | Cash Payout Ratio (%)              | 3-Year Annual Earnings Growth Forecast % | Tenure (years)                  | 3 month weekly volatility %         |
+| AVG Industry P/E         | 12 month One-Off Gain/Loss     | Long Term Liabilities           | Payout Ratio (%)                   | 3-Year Annual Market Earnings Growth %   | Yearly Compensation             | Market Cap                          |
+| P/E Ratio 2              | 1 Year Revenue Growth %           | Short Term Liabilities          | Dividend Yield %                   | Savings Rate %                           | Salary Percentage               | Last filed financials (days)       |
+| AVG Market P/E Ratio     | Last year Net Profit margin % | Cash Runway                   | Bottom 25% Market Dividend Yield % | Annual Revenue Growth %                  | Bonus Percentage                |                                      |
+| Market                   | Current Net Profit Margin %       | FCF Historical Growth           | Top 25% Market Dividend Yield %    | Annual Market Revenue Growth %           | Company Share Ownership         |                                      |
+| Market 1Y Return %       | 5-year avg Earnings growth p.a.% | D/E Ratio                     | Next Payment Date                  | Profit Growth 1Y Forecast %              | Share Ownership Value           |                                      |
+| Market / Industry        | YoY Earnings growth %        | D/E Ratio T-5 Year              | Ex-Date                            | Revenue Growth 1Y Forecast%              | Avg Tenure of Management        |                                      |
+| Industry 1Y Return %     | Operating Years            | Net Debt to EBITDA              |                                     | Loss Reduction 1Y Forecast %             | Avg Tenure of Board             |                                      |
+| Industry 30D Return %    | Avg annual earnings growth % | Operating CF                 |                                     | EPS Growth p.a. Forecast %               | Board Independence              |                                      |
+| Market 30D Return %      | Industry Avg annual earnings growth % | Short term Assets / Debt |                                     | ROE 3Y Forecast %                        | Industry Avg Board Independence |                                      |
+| Preferred Multiple       | Avg annual revenue growth %  | Net debt / Equity ratio         |                                     |                                          | Board Average Tenure (Years)    |                                      |
+| P/S Ratio                | ROE %                             | EBIT Interest coverage          |                                     |                                          | 3 Year Board Turnover           |                                      |
+| Industry AVG P/S Ratio   | Net margin %             | Shareholder equity              |                                     |                                          | CEO Compensation                |                                      |
+| P/B Ratio                | YoY Earnings Growth %             | Total Debt                      |                                     |                                          | Similar Size Co. Avg Compensation |                                    |
+| Industry AVG P/B Ratio   | Industry YoY Avg Earnings Growth % | Total Assets            |                                     |                                          | Management Avg Tenure (Years)   |                                      |
+| Industry AVG P/E Ratio   | ShareDilutionPercentage  | Total Liabilities               |                                     |                                          |                                  |                                      |
+| Peer AVG P/S Ratio       | ROE_Percentage              | EBIT                            |                                     |                                          |                                  |                                      |
+| Peer AVG P/B Ratio       | EarningsGrowthPercentage     | Cash and Short term Investments |                                     |                                          |                                  |                                      |
+| Peer AVG P/E Ratio       | DividendYieldPercentage      | Net Interest Margin             |                                     |                                          |                                  |                                      |
+| Fair P/S                 | P/E Ratio                         | Total Deposits                  |                                     |                                          |                                  |                                      |
+| Fair P/E                 | Market P/E Ratio                  | Total Loans                     |                                     |                                          |                                  |                                      |
+| Current Price            | Discount to SWS Fair Value %      | 3 Year Payout Ratio %           |                                     |                                          |                                  |                                      |
+| DCF Fair Value           | Earnings growth Forecast p.a.%  | Assets to Equity ratio          |                                     |                                          |                                  |                                      |
+| Industry_2               | Revenue growth Forecast p.a. %    | Allowance for Bad Loans (%)     |                                     |                                          |                                  |                                      |
+| P/B Ratio 2              | Analyst Price Target %            | Loans to Assets Ratio (%)       |                                     |                                          |                                  |                                      |
+| Industry_2 AVG P/B Ratio | Revenue growth 1Y %   | Bad Loans (%)                   |                                     |                                          |                                  |                                      |
+| PEG Ratio                | Earnings growth 5 Year p.a.%      | Loans to Deposits Ratio (%)     |                                     |                                          |                                  |                                      |
+|              | Earnings growth 3 Year Forecast % | High Risk Liabilities (%)       |                                     |                                          |                                  |                                      |
+|              | Gross Profit Margin T-1 Year      |                                  |                                     |                                          |                                  |                                      |
+|              | Current Gross Profit Margin       |                                  |                                     |                                          |                                  |                                      |
+|              | Profit Margin T-1 Year %          |                                  |                                     |                                          |                                  |                                      |
+|              | Current Profit Margin %           |                                  |                                     |                                          |                                  |                                      |
+
+
+3.Financial/Data analytics : Portfolio op·ti·miza·tion/ Attribution Analysis
+   Value
+   Growth
+   Past
+   Health
+   Dividend
 
 Under development...
