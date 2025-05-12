@@ -29,7 +29,7 @@ BI Dashboard Visualization
 
 ## 🚀 How to Run This Project (SOP)
 
-> You may also find a detailed version in [`/docs/SOP.md`](./docs/SOP.md) (optional if needed).
+> You may also find a detailed version in [`/docs/SOP.md`](./docs/SOP.md) .
 
 ---
 
