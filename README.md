@@ -1,4 +1,4 @@
-# ETL-NLP-Financial-Stock-Analysis-Complete-Pipeline
+# ETL-NLP-Financial_Stock_Analysis-Complete-Pipeline
 
 ## Overview
 This project is an extention of the initial project/repo SWS API ETL [].
