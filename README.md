@@ -5,13 +5,10 @@ This project is an extention of the initial project/repo SWS API ETL [].
 The ETL is slightly modified so that the user selects which specific exchange(s) they want to retreive data from .
 Upon completion the user needs to ensure total data received is as expected.
 
-1.ETL Pipeline
-   -Extract from API
-   -Transform
-   -Load to PostgreSQL DB
-
 Workflow :
 
+1.ETL 
+ 
 1. Run 1.Get_Exchanges.py
    -This will retreive all exchanges & the number of total companies available to retreive data.
    -The data is stored in a csv in the respective directory which is set in : 'file_path'.
@@ -37,14 +34,7 @@ Workflow :
 
 
 
-    Data Types:
-      - Exchanges / Tickers / Status
-      - Insider Transactions
-      - MarketCap / Primary/Secondary/Tertiary Industry
-      - Management team
-      - Shareholders
-      - Financials 
-            - BANK, DIVIDENDS, FUTURE, HEALTH,  MANAGEMENT, MARKET, MISC, PAST, REWARDS, RISKS, VALUE
+   
         
     
 2.Enhancement layer : Regex ->> Extract data from text 
