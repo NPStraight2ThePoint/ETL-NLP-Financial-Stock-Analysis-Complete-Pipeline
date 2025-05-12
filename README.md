@@ -15,7 +15,6 @@ This project is an **end-to-end financial data pipeline** that extends the origi
 
 ## 📐 Architecture
 
-```text
 SWS API → Modular ETL → PostgreSQL DB Clean Tables/Schemas
                      ↓
 Enhancement layer →  Regex Extraction Engine (NLP)
@@ -26,7 +25,6 @@ Analytics & Portfolio Conustruction ( max Sharpe Ratio)
                      ↓
 BI Dashboard Visualization
 
-```text
 
 ## 🚀 How to Run This Project (SOP)
 
