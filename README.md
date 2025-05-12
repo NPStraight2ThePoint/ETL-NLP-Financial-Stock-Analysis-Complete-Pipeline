@@ -1,9 +1,34 @@
 # ETL-NLP-Financial-Stock-Analysis-Complete-Pipeline
 
-Python
-PostgreSQL
-Simply Wall St API
+## Overview
+This project is an extention of the initial project/repo SWS API ETL [].
+The ETL is slightly modified so that the user selects which specific exchange(s) they want to retreive data from .
+Upon completion the user needs to ensure total data received is as expected.
 
+Workflow :
+
+1. Run 1.Get_Exchanges.py
+   -This will retreive all exchanges & the number of total companies available to retreive data.
+   -The data is stored in a csv in the respective directory which is set in : 'file_path'.
+   -Then you can remove all exchanges from the csv and retain only the line with the exchange you want to retreive data for (i.g. 'ASX')
+   -Prior doing any modification in the csv you can keep a copy of the complete list and save it in a different directory of your choise
+    in case you want to do another retreival later, alternatively you can run again this script on the second run and get the full list again.
+2. Run 2.Get_Companies.py
+   - This will get the list of all companies trading in that exchange plus some core data like id,ticker,exchange,name,active,isETF
+     This data will be stored in a csv which is set in : 'filename = output_dir / f"{exchange_symbol}_{FDM}.csv"'
+     The process is performed with a pagination step of 90 (max step to retreive this amount of data per batch)
+     In the end of run if all data has been retreived as expected (no failures) then a print will be displayed as : print(f"✅ All companies retrieved ({company_count})").
+     If failures have occured then this print will be displayed : print(f"❌ Mismatch: Expected {company_count}, Got {len(df_exchange)} (Diff = {diff})")
+     In the case of failures user will need to delete the respective csv and re-run the script. Continue until you get positive print.
+     Usually this retreival is succesfull with first try but sometimes API or connectivity issues occur which interup the process.
+     No loggging takes place in this script due the relative ease of the retreival plus flexibility in step in order to minimise complications.
+
+3. Run 3.Get_All_Data.py
+   - This will loop through all companies saved in csv from step 2 , with step=1 and retreive all available data.
+     The data is split & saved into segments : Listings, insider transactions, members, owners, statements
+     in respective csv's in the main directory following their naming conventions.
+     
+     
 
 1.ETL Pipeline
    -Extract from API
@@ -22,42 +47,6 @@ Simply Wall St API
     
 2.Enhancement layer : Regex ->> Extract data from text 
 
-## Financial Metrics Overview
-
-| VALUE                    | PAST                                  | HEALTH                          | DIVIDENDS                           | FUTURE                                   | MANAGEMENT                       | MARKET                      |
-|--------------------------|---------------------------------------|---------------------------------|-------------------------------------|------------------------------------------|----------------------------------|-----------------------------|
-| Industry                 | 5 Year Earnings Growth p.a. %         | Short Term Assets               | Cash Payout Ratio (%)               | 3-Year Annual Earnings Growth Forecast % | Tenure (years)                   | 3 month weekly volatility % |
-| AVG Industry P/E         | 12 month One-Off Gain/Loss            | Long Term Liabilities           | Payout Ratio (%)                    | 3-Year Annual Market Earnings Growth %   | Yearly Compensation              | Market Cap                  |
-| P/E Ratio                | 1 Year Revenue Growth %               | Short Term Liabilities          | Dividend Yield %                    | Savings Rate %                           | Salary Percentage                | Last filed financials (days)|
-| AVG Market P/E Ratio     | Last year Net Profit margin %         | Cash Runway                     | Bottom 25% Market Dividend Yield %  | Annual Revenue Growth %                  | Bonus Percentage                 |                             |
-| Market                   | Current Net Profit Margin %           | FCF Historical Growth           | Top 25% Market Dividend Yield %     | Annual Market Revenue Growth %           | Company Share Ownership          |                             |         
-| Market 1Y Return %       | 5-year avg Earnings growth p.a.%      | D/E Ratio                       | Next Payment Date                   | Profit Growth 1Y Forecast %              | Share Ownership Value            |                             |
-| Market / Industry        | YoY Earnings growth %                 | D/E Ratio T-5 Year              | Ex-Date                             | Revenue Growth 1Y Forecast%              | Avg Tenure of Management         |                             |         
-| Industry 1Y Return %     | Operating Years                       | Net Debt to EBITDA              |                                     | Loss Reduction 1Y Forecast %             | Avg Tenure of Board              |                             |         
-| Industry 30D Return %    | Avg annual earnings growth %          | Operating CF                    |                                     | EPS Growth p.a. Forecast %               | Board Independence               |                             |         
-| Market 30D Return %      | Industry Avg annual earnings growth % | Short term Assets / Debt        |                                     | ROE 3Y Forecast %                        | Industry Avg Board Independenc e |                             |         
-| Preferred Multiple       | Avg annual revenue growth %           | Net debt / Equity ratio         |                                     | Earnings growth 3 Year Forecast %        |Board Average Tenure (Years)      |                             |         
-| P/S Ratio                | ROE %                                 | EBIT Interest coverage          |                                     |                                          |3 Year Board Turnover             |                             |         
-| Industry AVG P/S Ratio   | Net margin %                          | Shareholder equity              |                                     |                                          | CEO Compensation                 |                             |         
-| P/B Ratio                | YoY Earnings Growth %                 | Total Debt                      |                                     |                                          | Similar Size Co. Avg Compensation|                             |         
-| Industry AVG P/B Ratio   | Industry YoY Avg Earnings Growth %    | Total Assets                    |                                     |                                          | Management Avg Tenure (Years)    |                             |         
-| Industry AVG P/E Ratio   | ShareDilutionPercentage               | Total Liabilities               |                                     |                                          |                                  |                             |         
-| Peer AVG P/S Ratio       | ROE_Percentage                        | EBIT                            |                                     |                                          |                                  |                             |         
-| Peer AVG P/B Ratio       | EarningsGrowthPercentage              | Cash and Short term Investments |                                     |                                          |                                  |                             |         
-| Peer AVG P/E Ratio       | DividendYieldPercentage               | Net Interest Margin             |                                     |                                          |                                  |                             |         
-| Fair P/S                 | P/E Ratio                             | Total Deposits                  |                                     |                                          |                                  |                             |         
-| Fair P/E                 | Market P/E Ratio                      | Total Loans                     |                                     |                                          |                                  |                             |         
-| Current Price            | Discount to SWS Fair Value %          | 3 Year Payout Ratio %           |                                     |                                          |                                  |                             |         
-| DCF Fair Value           | Earnings growth Forecast p.a.%        | Assets to Equity ratio          |                                     |                                          |                                  |                             |         
-| Industry_2               | Revenue growth Forecast p.a. %        | Allowance for Bad Loans (%)     |                                     |                                          |                                  |                             |         
-| P/B Ratio 2              | Analyst Price Target %                | Loans to Assets Ratio (%)       |                                     |                                          |                                  |                             |         
-| Industry_2 AVG P/B Ratio | Revenue growth 1Y %                   | Bad Loans (%)                   |                                     |                                          |                                  |                             |         
-| PEG Ratio                | Earnings growth 5 Year p.a.%          | Loans to Deposits Ratio (%)     |                                     |                                          |                                  |                             |         
-|                          | High Risk Liabilities (%)             |                                 |                                     |                                          |                                  |                             |         
-|                          | Gross Profit Margin T-1 Year          |                                 |                                     |                                          |                                  |                             |         
-|                          | Current Gross Profit Margin           |                                 |                                     |                                          |                                  |                             |         
-|                          | Profit Margin T-1 Year %              |                                 |                                     |                                          |                                  |                             |         
-|                          | Current Profit Margin %               |                                 |                                     |                                          |                                  |                             |        
 
 
 3.Analytics layer : Portfolio optimization/ Attribution Analysis
