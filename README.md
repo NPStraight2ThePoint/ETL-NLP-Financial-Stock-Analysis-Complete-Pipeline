@@ -1,5 +1,10 @@
 # ETL-NLP-Financial-Stock-Analysis-Complete-Pipeline
 
+Python
+PostgreSQL
+Simply Wall St API
+
+
 1.ETL Pipeline
    -Extract from API
    -Transform
