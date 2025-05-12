@@ -5,6 +5,11 @@ This project is an extention of the initial project/repo SWS API ETL [].
 The ETL is slightly modified so that the user selects which specific exchange(s) they want to retreive data from .
 Upon completion the user needs to ensure total data received is as expected.
 
+1.ETL Pipeline
+   -Extract from API
+   -Transform
+   -Load to PostgreSQL DB
+
 Workflow :
 
 1. Run 1.Get_Exchanges.py
@@ -30,10 +35,7 @@ Workflow :
      
      
 
-1.ETL Pipeline
-   -Extract from API
-   -Transform
-   -Load to PostgreSQL DB
+
 
     Data Types:
       - Exchanges / Tickers / Status
@@ -51,16 +53,6 @@ Workflow :
 
 3.Analytics layer : Portfolio optimization/ Attribution Analysis
 
-## 🧱 Factors & Metrics
-
-| 🟦 VALUE                                  | 🟨 DIVIDENDS                             | 🟪 FUTURE                       | 🟩 HEALTH                                  | 🟥 PAST PERFORMANCE                        |
-|-------------------------------------------|-------------------------------------------|----------------------------------|--------------------------------------------|---------------------------------------------|
-| Analysts 1Y Price Target                  | Bottom 25% Dividend Payers Comparison     | Earnings vs Savings Rate         | Short Term Assets vs Short Term Liabilities| Quality Earnings                            |
-| Industry Multiple Comparison              | Top 25% Dividend Payers Comparison        | Earnings vs Market               | Short Term Assets vs Long Term Liabilities | Net Profit Margins                          |
-| Market Multiple Comparison                | Dividend Stability                        | Earnings Growth                  | Net D/E Ratio                              | 5 Year Earnings Growth                      |
-| Fair Ratio Comparison (Growth, Risks etc) | Dividend Growth                           | Revenue vs Market                | D/E 5 Year Change                          | 1Y Earnings Growth vs 5Y Average            |
-| DCF Valuation                             | Earnings Dividend Coverage                | Revenue Growth                   | Operating Cash Flow Debt Coverage          | 1Y Earnings Growth vs Industry              |
-| Discount to DCF Fair Value                | FCF Dividend Coverage                     | Future ROE                       | EBIT Interest Coverage                     | ROE                                         |
 
 
 
