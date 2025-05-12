@@ -1,9 +1,30 @@
-# ETL-NLP-Financial_Stock_Analysis-Complete-Pipeline
+# 📊 ETL-NLP-Financial-Stock-Analysis-Complete-Pipeline
 
-## Overview
-This project is an extention of the initial project/repo SWS API ETL [].
-The ETL is slightly modified so that the user selects which specific exchange(s) they want to retreive data from .
-Upon completion the user needs to ensure total data received is as expected.
+## 🔍 Overview
+
+This project is an **end-to-end financial data pipeline** that extends the original [SWS API ETL](https://github.com/NPStraight2ThePoint/Simply-Wall-St-API-ETL-for-Financial-Data-Analysis) by adding a multi-layered analysis stack. It includes:
+
+- **Modular ETL** pipeline with exchange filtering
+- **Text-based NLP** layer for extracting key financial metrics using regex
+- **Clean structured tables** for downstream analytics
+- **Attribution modeling** based on 5 pillars (6 components each)
+- **Portfolio optimization** using attribute-driven logic & max Sharpe Ratio
+- **Interactive dashboard** BI Visualisation for portfolio composition, sector exposure & performance
+
+---
+
+## 📐 Architecture
+
+```text
+SWS API → Modular ETL → PostgreSQL DB Clean Tables/Schemas
+                     ↓
+Enhancement layer →  Regex Extraction Engine (NLP)
+                     ↓
+Attribution Layer (VALUE, PAST, FUTURE, DIVIDEND, HEALTH)
+                     ↓
+Analytics & Portfolio Conustruction ( max Sharpe Ratio)
+                     ↓
+BI Dashboard Visualization
 
 Workflow :
 
