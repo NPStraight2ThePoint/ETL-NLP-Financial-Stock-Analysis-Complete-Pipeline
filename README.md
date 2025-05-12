@@ -26,47 +26,73 @@ Analytics & Portfolio Conustruction ( max Sharpe Ratio)
                      ↓
 BI Dashboard Visualization
 
-Workflow :
+'''
 
-1.ETL 
- 
-1. Run 1.Get_Exchanges.py
-   -This will retreive all exchanges & the number of total companies available to retreive data.
-   -The data is stored in a csv in the respective directory which is set in : 'file_path'.
-   -Then you can remove all exchanges from the csv and retain only the line with the exchange you want to retreive data for (i.g. 'ASX')
-   -Prior doing any modification in the csv you can keep a copy of the complete list and save it in a different directory of your choise
-    in case you want to do another retreival later, alternatively you can run again this script on the second run and get the full list again.
-2. Run 2.Get_Companies.py
-   - This will get the list of all companies trading in that exchange plus some core data like id,ticker,exchange,name,active,isETF
-     This data will be stored in a csv which is set in : 'filename = output_dir / f"{exchange_symbol}_{FDM}.csv"'
-     The process is performed with a pagination step of 90 (max step to retreive this amount of data per batch)
-     In the end of run if all data has been retreived as expected (no failures) then a print will be displayed as : print(f"✅ All companies retrieved ({company_count})").
-     If failures have occured then this print will be displayed : print(f"❌ Mismatch: Expected {company_count}, Got {len(df_exchange)} (Diff = {diff})")
-     In the case of failures user will need to delete the respective csv and re-run the script. Continue until you get positive print.
-     Usually this retreival is succesfull with first try but sometimes API or connectivity issues occur which interup the process.
-     No loggging takes place in this script due the relative ease of the retreival plus flexibility in step in order to minimise complications.
+## 🚀 How to Run This Project (SOP)
 
-3. Run 3.Get_All_Data.py
-   - This will loop through all companies saved in csv from step 2 , with step=1 and retreive all available data.
-     The data is split & saved into segments : Listings, insider transactions, members, owners, statements
-     in respective csv's in the main directory following their naming conventions.
-     
-     
+> You may also find a detailed version in [`/docs/SOP.md`](./docs/SOP.md) (optional if needed).
 
+---
 
+### ⚙️ Phase 1 — ETL: Extract Core Data
 
-   
-        
-    
-2.Enhancement layer : Regex ->> Extract data from text 
+#### 1. `1.Get_Exchanges.py`
+- Retrieves available exchanges via SWS API.
+- Stores the list in a CSV at `file_path`.
+- Retain only the desired exchange (e.g., `ASX`) and optionally save a backup.
 
+#### 2. `2.Get_Companies.py`
+- Pulls company-level metadata for the selected exchange.
+- Outputs to: `"{exchange_symbol}_{FDM}.csv"`
+- Pagination step: 90.
+- On mismatch or partial pull, re-run until success.
 
+#### 3. `3.Get_All_Data.py`
+- Iterates through the companies from Step 2.
+- Retrieves full datasets: listings, insider trades, ownership, members, and financial statements.
+- Output is segmented by category into separate CSV files.
 
-3.Analytics layer : Portfolio optimization/ Attribution Analysis
+---
 
+### 🧠 Phase 2 — NLP: Extract Financial Metrics from Text
 
+#### 4. `4.Extract_Financial_Text_Metrics.py`
+- Uses **regex** to extract key financial indicators embedded in text fields.
+- Applies cleaning, normalization, and stores structured data into a clean SQL table (`financial_clean_table`).
 
+---
 
-4. BI Visualisation
-   
-Under development...
+### 🧱 Phase 3 — Attribution Modelling (5 Pillars × 6 Components)
+
+#### 5. `5.Create_Attribution_Table.py`
+- Applies logic to assign each stock a score across **5 fundamental pillars**, each having **6 components**.
+- The output is a structured table used for ranking, filtering, and modeling.
+
+---
+
+### 📊 Phase 4 — Analytics & Portfolio Construction
+
+#### 6. `6.Generate_Model_Portfolio.py`
+- Performs analytics on attributed stocks.
+- Optimizes for a model portfolio using statistical or ML-driven logic (e.g., Sharpe Ratio, Sortino Ratio, Minimum Variance, or custom scoring).
+- Portfolio output includes tickers, weights, and expected risk/return.
+
+---
+
+### 📈 Phase 5 — Visualization & Dashboard
+
+#### 7. `7.Create_Dashboard.py`
+- Generates an interactive dashboard including:
+  - Portfolio holdings and weights
+  - Attribution scores per pillar
+  - Sector exposure
+  - Historical or simulated performance (if available)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Languages**: Python, SQL  
+- **Libraries**: Pandas, Regex, Plotly/Dash, Scikit-learn (for ML), SQLAlchemy  
+- **Database**: PostgreSQL  
+- **Data Source**: SWS API (Simply Wall St)
