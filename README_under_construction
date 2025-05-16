@@ -32,6 +32,13 @@ This project is an **end-to-end financial data pipeline**
 
 ### 🧠 Phase 2 — Enhancement layer
 
+| Step | Script Name                         | Description |
+|------|-------------------------------------|--------------------------------------------------------------------------------------------------|
+| 1    | `1.Snowflake.py`                    | - Create attribution table
+| 2    | `2.NLP_Extract_Data.py`               - Extract data from text
+| 3    | `3.Final_Reformat.py`                 - Cleanse & prepare data for DB
+| 4    | '4.Load_DB.py                         - Load to DB
+
 #### 4. `4.Extract_Financial_Text_Metrics.py`
 - Uses **regex** to extract key financial indicators embedded in text fields.
 - Applies cleaning, normalization, and stores structured data into a clean SQL table (`financial_clean_table`).
