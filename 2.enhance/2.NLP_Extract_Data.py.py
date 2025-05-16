@@ -1,8 +1,5 @@
 import pandas as pd
 import re
-import sys
-
-sys.path.append(f'C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/2.Enhancement/NLP')  # Replace with the actual directory
 
 from NLP_BANK import *
 from NLP_DIVIDENDS import *
