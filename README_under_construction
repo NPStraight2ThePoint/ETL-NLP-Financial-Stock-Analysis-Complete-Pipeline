@@ -2,30 +2,18 @@
 
 ## 🔍 Overview
 
-This project is an **end-to-end financial data pipeline** that extends the original [SWS API ETL](https://github.com/NPStraight2ThePoint/Simply-Wall-St-API-ETL-for-Financial-Data-Analysis) by adding a multi-layered analysis stack. It includes:
+This project is an **end-to-end financial data pipeline**
 
-- **Modular ETL** pipeline with exchange filtering
-- **Text-based NLP** layer for extracting key financial metrics using regex
-- **Clean structured tables** for downstream analytics
-- **Attribution modeling** based on 5 pillars (6 components each)
-- **Portfolio optimization** using attribute-driven logic & max Sharpe Ratio
-- **Interactive dashboard** BI Visualisation for portfolio composition, sector exposure & performance
+- **ETL**                                   🔹Extract from API -> Transform via Python/Pandas -> Load in PostgreSQL DB
+- **Enhancement layer**                     🔹Extract data from text via Regex
+                                            🔹Create Attribution table
+- **Analytics & Portfolio Conustruction**   🔹Attribution weighting
+                                            🔹Max Sharpe Ratio
+- **BI Dashboard Visualization**            🔹Holdings
+                                            🔹Asset Allocation
+                                            🔹Sector Exposure
+                                            🔹Expected Return , volatility , Sharpe Ratio
 
----
-
-## 📐 Architecture
-```text
-SWS API → Modular ETL → PostgreSQL DB Clean Tables/Schemas
-                     ↓
-Enhancement layer →  Regex Extraction Engine (NLP)
-                     ↓
-Attribution Layer (VALUE, PAST, FUTURE, DIVIDEND, HEALTH)
-                     ↓
-Analytics & Portfolio Conustruction ( max Sharpe Ratio)
-                     ↓
-BI Dashboard Visualization
-```
----
 
 ## 🚀 How to Run This Project (SOP)
 
