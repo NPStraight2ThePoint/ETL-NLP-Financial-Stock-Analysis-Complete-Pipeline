@@ -55,6 +55,7 @@ This project is an **end-to-end financial data pipeline**
 ## 🛠️ Tech Stack
 
 - **Languages**: Python, SQL  
-- **Libraries**: Pandas, Regex, Plotly/Dash, Scikit-learn (for ML), SQLAlchemy  
+- **Libraries**: Pandas, Regex, Requests, SQLAlchemy  
 - **Database**: PostgreSQL  
+- **API**: SWS API
 
