@@ -1,27 +1,17 @@
-# 📊 ETL-NLP-Financial-Stock-Analysis-Complete-Pipeline
+This project is an **end-to-end financial data pipeline** 
 
-## 🔍 Overview
 
-This project is an **end-to-end financial data pipeline**
-
-- **ETL**                                   🔹Extract from API -> Transform via Python/Pandas -> Load in PostgreSQL DB
+- **ETL**                                   🔹Extract from API via GraphQL query
+                                            🔹Transform via Python/Pandas
+                                            🔹Load in PostgreSQL DB
 - **Enhancement layer**                     🔹Extract data from text via Regex
-                                            🔹Create Attribution table (Value, Growth, Past, Dividend, Health)
+                                            🔹Create Attribution/Ranks table (Value, Growth, Past, Dividend, Health)
 - **Analytics & Portfolio Conustruction**   🔹Attribution weighting
-                                            🔹Max Sharpe Ratio
+                                            🔹Calculate stock weights for max Sharpe Ratio
 - **BI Dashboard Visualization**            🔹Holdings
                                             🔹Asset Allocation
                                             🔹Sector Exposure
                                             🔹Expected Return , volatility , Sharpe Ratio
-
-
-## 🚀 How to Run This Project (SOP)
-
-> You may also find a detailed version in [`/docs/SOP.md`](./docs/SOP.md) .
-
----
-
-### ⚙️ Phase 1 — ETL: Extract Core Data
 
 #### 1. `1.Get_Exchanges.py`
 - Retrieves available exchanges via SWS API.
