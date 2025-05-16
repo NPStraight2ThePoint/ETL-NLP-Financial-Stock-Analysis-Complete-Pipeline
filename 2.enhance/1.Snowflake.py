@@ -11,8 +11,8 @@ queries = {
     "company_statements": f"SELECT * FROM statements WHERE exchange = '{exchange}';"
 }
 
-STATEMENTS = f'C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/2.Enhancement/Output/{exchange}_Statements_{FDM}.xlsx'
-SNOWFLAKE = f'C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/2.Enhancement/Output/{exchange}_Snowflake_{FDM}.xlsx'
+STATEMENTS = f'C:/.../.venv/2.Enhancement/Output/{exchange}_Statements_{FDM}.xlsx'
+SNOWFLAKE = f'C:/.../.venv/2.Enhancement/Output/{exchange}_Snowflake_{FDM}.xlsx'
 
 try:
     conn = psycopg2.connect(**DB_PARAMS)
