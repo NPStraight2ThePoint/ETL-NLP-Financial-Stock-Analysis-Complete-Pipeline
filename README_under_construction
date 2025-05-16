@@ -6,7 +6,7 @@ This project is an **end-to-end financial data pipeline**
 
 - **ETL**                                   🔹Extract from API -> Transform via Python/Pandas -> Load in PostgreSQL DB
 - **Enhancement layer**                     🔹Extract data from text via Regex
-                                            🔹Create Attribution table
+                                            🔹Create Attribution table (Value, Growth, Past, Dividend, Health)
 - **Analytics & Portfolio Conustruction**   🔹Attribution weighting
                                             🔹Max Sharpe Ratio
 - **BI Dashboard Visualization**            🔹Holdings
