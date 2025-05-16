@@ -6,7 +6,7 @@ This project is an **end-to-end financial data pipeline**
                                             🔹Load in PostgreSQL DB
 - **Enhancement layer**                     🔹Extract data from text via Regex
                                             🔹Create Attribution/Rankings table (Value, Growth, Past, Dividend, Health)
-- **Analytics & Portfolio Conustruction**   🔹Attribution weighting
+- **Analytics & Portfolio Conustruction**   🔹List winners based on attribution Rankings.
                                             🔹Stock weights calculation for max Sharpe Ratio
 - **BI Dashboard Visualization**            🔹Holdings
                                             🔹Asset Allocation
