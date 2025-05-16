@@ -17,14 +17,16 @@ This project is an **end-to-end financial data pipeline**
 
 ### 📁 Phase 1 — ETL
 
-| Step | Script Name                     | Description |
-|------|---------------------------------|--------------------------------------------------------------------------------------------------|
-| 1    | `1.Get_Exchanges.py`            | - Retrieves available exchanges & their company count.
-| 2    | `2.Get_Companies.py`            | - Retreives all tickers & their core data for each exchange.
-| 3    | `3.Get_All_Data.py`             | - Iterates through all tickers and retreives all data types (listings,statements,owners,members,insider transactions).
-| 4    | `4.1Get_All_Data_Failures.py`   | - Iterates through all failed tickers . Redo until all data has been retreived.
-| 5    | `5.Transpose_Statements.py`     | - Perform transformations to align data with DB schemas.
-| 6    | `6.Load_temp_DB.py`             | - Perform transformations to align data with DB schemas.
+| Step | Script Name                         | Description |
+|------|-------------------------------------|--------------------------------------------------------------------------------------------------|
+| 1    | `1.Get_Exchanges.py`                | - Retrieves available exchanges & their company count.
+| 2    | `2.Get_Companies.py`                | - Retreives all tickers & their core data for each exchange.
+| 3    | `3.Get_All_Data.py`                 | - Iterates through all tickers and retreives all data types (listings,statements,owners,members,insider transactions).
+| 4    | `4.1Get_All_Data_Failures.py`       | - Iterates through all failed tickers . Redo until all data has been retreived.
+| 5    | `5.Transpose_Statements.py`         | - Perform transformations to align data with DB schemas.
+| 6    | `6.Load_temp_DB.py`                 | - Load data in temp DB.
+| 7    | `7.Insider_transactions_identify.py`| - Check & remove duplicate records.
+| 8    | `8.Move_To_Prod.py`                 | - Move to data to Prod DB.
 
 ---
 
