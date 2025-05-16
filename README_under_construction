@@ -13,7 +13,6 @@ This project is an **end-to-end financial data pipeline**
                                             🔹Sector Exposure
                                             🔹Expected Return , volatility , Sharpe Ratio
 
-###  Script Overview
 
 ### 📁 Phase 1 — ETL
 
@@ -29,31 +28,17 @@ This project is an **end-to-end financial data pipeline**
 | 8    | `8.Move_To_Prod.py`                 | - Move to data to Prod DB.
 
 ---
-
 ### 🧠 Phase 2 — Enhancement layer
 
 | Step | Script Name                         | Description |
 |------|-------------------------------------|--------------------------------------------------------------------------------------------------|
 | 1    | `1.Snowflake.py`                    | - Create attribution table
-| 2    | `2.NLP_Extract_Data.py`               - Extract data from text
-| 3    | `3.Final_Reformat.py`                 - Cleanse & prepare data for DB
-| 4    | '4.Load_DB.py                         - Load to DB
-
-#### 4. `4.Extract_Financial_Text_Metrics.py`
-- Uses **regex** to extract key financial indicators embedded in text fields.
-- Applies cleaning, normalization, and stores structured data into a clean SQL table (`financial_clean_table`).
+| 2    | `2.NLP_Extract_Data.py`             | - Extract data from text
+| 3    | `3.Final_Reformat.py`               | - Cleanse & prepare data for DB
+| 4    | '4.Load_DB.py                       | - Load to DB
 
 ---
-
-### 🧱 Phase 3 — Attribution Modelling (5 Pillars × 6 Components)
-
-#### 5. `5.Create_Attribution_Table.py`
-- Applies logic to assign each stock a score across **5 fundamental pillars**, each having **6 components**.
-- The output is a structured table used for ranking, filtering, and modeling.
-
----
-
-### 📊 Phase 4 — Analytics & Portfolio Construction
+### 📊 Phase 3 — Analytics & Portfolio Construction
 
 #### 6. `6.Generate_Model_Portfolio.py`
 - Performs analytics on attributed stocks.
@@ -61,15 +46,9 @@ This project is an **end-to-end financial data pipeline**
 - Portfolio output includes tickers, weights, and expected risk/return.
 
 ---
+### 📈 Phase 4 — Visualization & Dashboard
 
-### 📈 Phase 5 — Visualization & Dashboard
-
-#### 7. `7.Create_Dashboard.py`
-- Generates an interactive dashboard including:
-  - Portfolio holdings and weights
-  - Attribution scores per pillar
-  - Sector exposure
-  - Historical or simulated performance (if available)
+#### 7. 
 
 ---
 
@@ -78,4 +57,4 @@ This project is an **end-to-end financial data pipeline**
 - **Languages**: Python, SQL  
 - **Libraries**: Pandas, Regex, Plotly/Dash, Scikit-learn (for ML), SQLAlchemy  
 - **Database**: PostgreSQL  
-- **Data Source**: SWS API (Simply Wall St)
+
