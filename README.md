@@ -34,8 +34,8 @@ This project is an **End-to-end financial data pipeline** including -> ETL, data
 ### 🧠 Phase 2 — Enhancement layer
 
  🔹 Extract data from text using **Regex**
- 🔹 Create **Attribution / Rankings Table**  
-       Value, Growth, Past Performance, Dividend, Health
+ 🔹 Create **Attribution / Rankings Table** (Value, Growth, Past Performance, Dividend, Health)
+       
 
 | Step | Script Name                         | Description |
 |------|-------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -67,7 +67,7 @@ This project is an **End-to-end financial data pipeline** including -> ETL, data
 🔹 **Top 10 Holdings**
 🔹 **Sector Exposure**
 🔹 **Top Expected Performers**
-      📄 [BI Dashboard PDF](4.BI_Dashboards/Top%2010_Sectors_Performers_ASX.pdf)
+ 📄 [BI Dashboard PDF](4.BI_Dashboards/Top%2010_Sectors_Performers_ASX.pdf)     
 ---
 
 ### 🆔 Project Info
