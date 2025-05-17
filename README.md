@@ -70,22 +70,18 @@ This project is an **End-to-end financial data pipeline** including **ETL**, **D
 🔹 **Sector Exposure**  
 🔹 **Top Expected Performers**  
 
-📄 **[View BI Dashboard (PDF)](4.BI_Dashboards/Top%2010_Sectors_Performers_ASX.pdf)**  
-
 ---
 
 ### 🧭 End-to-End Workflow
 
 ![End-to-End Workflow](End%20To%20End%20Workflow.png)
 
-#### 🔹 Top 10 Holdings  
+
 ![ASX Holdings](./4.BI_Dashboards/ASX_Holdings.png)
 
-#### 🔹 Sector Exposure  
-![ASX Sector Exposure](./4.BI_Dashboards/ASX_SectorExposure.png)
+![ASX Sector Exposure](./4.BI_Dashboards/ASX_Sectors.png)
 
-#### 🔹 Top Expected Performers  
-![ASX Top Performers](./4.BI_Dashboards/ASX_TopPerformers.png)
+![ASX Top Performers](./4.BI_Dashboards/ASX_Top_Performers.png)
 
 
 ---
