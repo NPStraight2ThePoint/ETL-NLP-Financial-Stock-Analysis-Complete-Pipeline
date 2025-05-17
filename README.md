@@ -58,7 +58,7 @@ This project is an **End-to-end financial data pipeline** including **ETL**, **D
 | 3    | `3.Portf_opt.py`                    | Optimize portfolio weights to **maximize Sharpe Ratio** with constraints:  
                                                 - Long-only positions  
                                                 - At least 1 company per primary industry  
-                                                - Max 10% allocation per position                                               |
+                                                - Max 10% allocation per position                                               
 
 ---
 
