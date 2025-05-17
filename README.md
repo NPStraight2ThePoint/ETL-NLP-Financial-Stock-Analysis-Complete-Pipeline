@@ -71,12 +71,14 @@ This project is an **End-to-end financial data pipeline** including **ETL**, **D
 🔹 **Top Expected Performers**  
 
 📄 **[View BI Dashboard (PDF)](4.BI_Dashboards/Top%2010_Sectors_Performers_ASX.pdf)**  
+
 ---
 
 ### 🗂️ Project Workflow Overview
 
 ![End-to-End Workflow](End%20To%20End%20Workflow.png)
 
+---
 
 ### 🆔 Project Info
 
