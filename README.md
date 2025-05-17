@@ -1,4 +1,4 @@
-## 📈 End-to-End Financial Pipeline: Python · PostgreSQL · Portfolio Analytics · Power BI
+## 📈 End-to-End Financial Pipeline
 
 This project is an **End-to-end financial data pipeline** including -> ETL, data enhancement, portfolio optimization and BI visualization.
 
