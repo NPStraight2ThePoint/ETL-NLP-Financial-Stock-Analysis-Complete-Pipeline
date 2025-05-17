@@ -67,7 +67,7 @@ This project is an **end-to-end financial data pipeline** including -> ETL, data
 - 🔹 **Top 10 Holdings**
 - 🔹 **Sector Exposure**
 - 🔹 **Top Expected Performers**
-      📄 [Download Full BI Dashboard PDF](docs/portfolio_report.pdf)
+      📄 [Download BI Dashboard PDF](4.BI_Dashboards/Top%2010_Sectors_Performers_ASX.pdf)
 ---
 
 ### 🆔 Project Info
