@@ -66,10 +66,11 @@ This project is an **End-to-end financial data pipeline** including **ETL**, **D
 
 ### 📈 Phase 4 — BI Visualization & Dashboards
 
-🔹 **Top 10 Holdings**
-🔹 **Sector Exposure**
-🔹 **Top Expected Performers**
- 📄 [BI Dashboard PDF](4.BI_Dashboards/Top%2010_Sectors_Performers_ASX.pdf)     
+🔹 **Top 10 Holdings**  
+🔹 **Sector Exposure**  
+🔹 **Top Expected Performers**  
+
+📄 **[View BI Dashboard (PDF)](4.BI_Dashboards/Top%2010_Sectors_Performers_ASX.pdf)**  
 ---
 
 ### 🆔 Project Info
