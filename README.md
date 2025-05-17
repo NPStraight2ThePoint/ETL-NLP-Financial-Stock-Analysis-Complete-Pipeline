@@ -35,7 +35,7 @@ This project is an **End-to-end financial data pipeline** including -> ETL, data
 
  🔹 Extract data from text using **Regex**
  🔹 Create **Attribution / Rankings Table**  
-  - Value, Growth, Past Performance, Dividend, Health
+       Value, Growth, Past Performance, Dividend, Health
 
 | Step | Script Name                         | Description |
 |------|-------------------------------------|--------------------------------------------------------------------------------------------------|
