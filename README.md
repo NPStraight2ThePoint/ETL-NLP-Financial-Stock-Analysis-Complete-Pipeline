@@ -1,16 +1,37 @@
-This project is an **end-to-end financial data pipeline** 
+## 📈 End-to-End Financial Data Pipeline
 
+This project is an **end-to-end financial data pipeline** including -> ETL, data enhancement, portfolio optimization and BI visualization.
 
-- **ETL**                                   🔹Extract from API via GraphQL query
-                                            🔹Transform via Python/Pandas
-                                            🔹Load in PostgreSQL DB
-- **Enhancement layer**                     🔹Extract data from text via Regex
-                                            🔹Create Attribution/Rankings table (Value, Growth, Past, Dividend, Health)
-- **Analytics & Portfolio Conustruction**   🔹List winners based on attribution Rankings.
-                                            🔹Stock weights calculation for max Sharpe Ratio
-- **BI Dashboard Visualization**            🔹Top 10 Holdings
-                                            🔹Sector Exposure
-                                            🔹Top Expected Performers
+---
+
+## ⚙️ ETL
+
+- 🔹 **Extract** from API via GraphQL query  
+- 🔹 **Transform** via Python/Pandas  
+- 🔹 **Load** into PostgreSQL database  
+
+---
+
+## 🔍 Enhancement Layer
+
+- 🔹 Extract data from text using **Regex**
+- 🔹 Create **Attribution / Rankings Table**  
+  - Value, Growth, Past Performance, Dividend, Health
+
+---
+
+## 🧠 Analytics & Portfolio Construction
+
+- 🔹 List **winners** based on attribution rankings  
+- 🔹 Calculate **stock weights** for **maximum Sharpe Ratio**
+
+---
+
+## 📊 BI Dashboard Visualization
+
+- 🔹 **Top 10 Holdings**
+- 🔹 **Sector Exposure**
+- 🔹 **Top Expected Performers**
 
 
 ### 📁 Phase 1 — ETL
