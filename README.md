@@ -67,7 +67,7 @@ This project is an **end-to-end financial data pipeline** including -> ETL, data
 - 🔹 **Top 10 Holdings**
 - 🔹 **Sector Exposure**
 - 🔹 **Top Expected Performers**
-
+      📄 [Download Full BI Dashboard PDF](docs/portfolio_report.pdf)
 ---
 
 ### 🆔 Project Info
