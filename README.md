@@ -73,6 +73,11 @@ This project is an **End-to-end financial data pipeline** including **ETL**, **D
 📄 **[View BI Dashboard (PDF)](4.BI_Dashboards/Top%2010_Sectors_Performers_ASX.pdf)**  
 ---
 
+### 🗂️ Project Workflow Overview
+
+![Workflow Chart](End To End Workflow.png)
+
+
 ### 🆔 Project Info
 
 **Author:** *Nicholas Papadimitris*  
