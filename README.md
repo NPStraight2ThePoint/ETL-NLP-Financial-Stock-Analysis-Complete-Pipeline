@@ -78,6 +78,16 @@ This project is an **End-to-end financial data pipeline** including **ETL**, **D
 
 ![End-to-End Workflow](End%20To%20End%20Workflow.png)
 
+#### 🔹 Top 10 Holdings  
+![Top 10 Holdings](./4.BI_Dashboards/images/top_holdings.png)
+
+#### 🔹 Sector Exposure  
+![Sector Exposure](./4.BI_Dashboards/images/sector_exposure.png)
+
+#### 🔹 Top Expected Performers  
+![Top Performers](./4.BI_Dashboards/images/top_performers.png)
+
+
 ---
 
 ### 🆔 Project Info
