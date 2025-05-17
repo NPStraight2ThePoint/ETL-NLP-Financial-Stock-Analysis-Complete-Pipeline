@@ -13,9 +13,9 @@ This project is an **End-to-end financial data pipeline** including -> ETL, data
 
 ### 📁 Phase 1 — ETL
 
-- 🔹 **Extract** from API via GraphQL query  
-- 🔹 **Transform** via Python/Pandas  
-- 🔹 **Load** into PostgreSQL database  
+ 🔹 **Extract** from API via GraphQL query  
+ 🔹 **Transform** via Python/Pandas  
+ 🔹 **Load** into PostgreSQL database  
 
 
 | Step | Script Name                         | Description |
@@ -33,8 +33,8 @@ This project is an **End-to-end financial data pipeline** including -> ETL, data
 
 ### 🧠 Phase 2 — Enhancement layer
 
-- 🔹 Extract data from text using **Regex**
-- 🔹 Create **Attribution / Rankings Table**  
+ 🔹 Extract data from text using **Regex**
+ 🔹 Create **Attribution / Rankings Table**  
   - Value, Growth, Past Performance, Dividend, Health
 
 | Step | Script Name                         | Description |
@@ -48,8 +48,8 @@ This project is an **End-to-end financial data pipeline** including -> ETL, data
 
 ### 📊 Phase 3 — Analytics & Portfolio Construction
 
-- 🔹 List **winners** based on attribution rankings  
-- 🔹 Calculate **stock weights** for **maximum Sharpe Ratio** under constraints
+ 🔹 List **winners** based on attribution rankings  
+ 🔹 Calculate **stock weights** for **maximum Sharpe Ratio** under constraints
 
 | Step | Script Name                         | Description                                                                                                                |
 |------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -64,9 +64,9 @@ This project is an **End-to-end financial data pipeline** including -> ETL, data
 
 ### 📈 Phase 4 — BI Visualization & Dashboards
 
-- 🔹 **Top 10 Holdings**
-- 🔹 **Sector Exposure**
-- 🔹 **Top Expected Performers**
+🔹 **Top 10 Holdings**
+🔹 **Sector Exposure**
+🔹 **Top Expected Performers**
       📄 [BI Dashboard PDF](4.BI_Dashboards/Top%2010_Sectors_Performers_ASX.pdf)
 ---
 
