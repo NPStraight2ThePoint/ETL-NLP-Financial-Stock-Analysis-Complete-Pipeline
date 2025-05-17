@@ -46,4 +46,4 @@ db_config = {
     'port': DB_PORT         # default PostgreSQL port
 }
 
-output_dir = Path('C:/Users/nicho/PycharmProjects/Projects/API2SQL Pipelines/SWS API Production_V2/SWS_API_Prod_V2/.venv/output')
+output_dir = Path('C:/.../.venv/output')
