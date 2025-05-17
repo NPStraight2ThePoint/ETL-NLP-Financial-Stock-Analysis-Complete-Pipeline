@@ -8,10 +8,9 @@ This project is an **end-to-end financial data pipeline**
                                             🔹Create Attribution/Rankings table (Value, Growth, Past, Dividend, Health)
 - **Analytics & Portfolio Conustruction**   🔹List winners based on attribution Rankings.
                                             🔹Stock weights calculation for max Sharpe Ratio
-- **BI Dashboard Visualization**            🔹Holdings
-                                            🔹Asset Allocation
+- **BI Dashboard Visualization**            🔹Top 10 Holdings
                                             🔹Sector Exposure
-                                            🔹Expected Return , volatility , Sharpe Ratio
+                                            🔹Top Expected Performers
 
 
 ### 📁 Phase 1 — ETL
