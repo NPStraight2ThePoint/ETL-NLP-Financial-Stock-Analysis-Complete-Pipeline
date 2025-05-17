@@ -56,7 +56,7 @@ This project is an **End-to-end financial data pipeline** including **ETL**, **D
 | 1    | `1.1.Extract_Top_50_Snowflake.py`   | Extract Top 50 companies based on the 5 key attributes for a specific exchange.                                            |
 | 2    | `2.Get_Expected_Returns.py`         | Calculate expected price return, total return, annualized volatility, and Sharpe Ratio for each selected company.          |
 | 3    | `3.Portf_opt.py`                    | Optimize portfolio weights to **maximize Sharpe Ratio** with constraints:  
-|                                            |    - Long-only positions - At least 1 company per primary industry - Max 10% allocation per position                    |  
+                                                - Long-only positions - At least 1 company per primary industry - Max 10% allocation per position                    
                                                                                                                                                                                                                           
 ---
 
