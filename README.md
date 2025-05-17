@@ -42,7 +42,7 @@ This project is an **end-to-end financial data pipeline** including -> ETL, data
 | 1    | `1.Snowflake.py`                    | - Create attribution table
 | 2    | `2.NLP_Extract_Data.py`             | - Extract data from text
 | 3    | `3.Final_Reformat.py`               | - Cleanse & prepare data for DB
-| 4    | '4.Load_DB.py                       | - Load to DB
+| 4    | `4.Load_DB.py`                      | - Load to DB
 
 ---
 
@@ -51,12 +51,14 @@ This project is an **end-to-end financial data pipeline** including -> ETL, data
 - 🔹 List **winners** based on attribution rankings  
 - 🔹 Calculate **stock weights** for **maximum Sharpe Ratio** under constraints
 
-| Step | Script Name                         | Description                                                                                                            |
-|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------                                         
-| 1    | `1.1.Extract_Top_50_Snowflake.py.py`| - Extract Top 50 companies based on the 5 attributes for a specific exchange
-| 2    | `2.Get_Expected_Returns.py`         | - Calculate Expected Price return, Expected Total return, annualised volatility & Sharpe Ratio for each of the winners
-| 3    | `3.Portf_opt.py`                    | - Calculate optimal stock weights with target : Max Sharpe Ratio & constraints :
-                                                 Long positions only, at least 1 position in each primary industry & no more than 10% in each position.
+| Step | Script Name                         | Description                                                                                                                |
+|------|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| 1    | `1.1.Extract_Top_50_Snowflake.py`   | Extract Top 50 companies based on the 5 key attributes for a specific exchange.                                            |
+| 2    | `2.Get_Expected_Returns.py`         | Calculate expected price return, total return, annualized volatility, and Sharpe Ratio for each selected company.          |
+| 3    | `3.Portf_opt.py`                    | Optimize portfolio weights to **maximize Sharpe Ratio** with constraints:  
+                                                - Long-only positions  
+                                                - At least 1 company per primary industry  
+                                                - Max 10% allocation per position                                               |
 
 ---
 
