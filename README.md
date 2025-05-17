@@ -5,10 +5,10 @@ This project is an **end-to-end financial data pipeline** including -> ETL, data
 ## 🛠️ Tech Stack
 
 - **Languages**: Python, SQL  
-- **Libraries**: Pandas, Regex, Requests, SQLAlchemy/psycopg2  
+- **Libraries**: Pandas, cvxpy , numpy, Regex, Requests, SQLAlchemy/psycopg2  
 - **Database**: PostgreSQL  
 - **API**: SWS API
-
+- **Visualization**: Power BI
 ---
 
 ### 📁 Phase 1 — ETL
@@ -48,42 +48,24 @@ This project is an **end-to-end financial data pipeline** including -> ETL, data
 
 ### 📊 Phase 3 — Analytics & Portfolio Construction
 
-
 - 🔹 List **winners** based on attribution rankings  
 - 🔹 Calculate **stock weights** for **maximum Sharpe Ratio**
 
+| Step | Script Name                         | Description |
+|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------          -------            -------          -------            -------         
+| 1    | `1.1.Extract_Top_50_Snowflake.py.py`| - Extract Top 50 companies based on the 5 attributes for a specific exchange
+| 2    | `2.Get_Expected_Returns.py`         | - Calculate Expected Price return, Expected Total return, annualised volatility & Sharpe Ratio for each of the winners
+| 3    | `3.Portf_opt.py`                    | - Calculate optimal stock weights with target : Max Sharpe Ratio & constraints : Long positions only, at least 1 position in each primary industry & no more than 10% in each position.
+
 ---
 
-## 📊 BI Dashboard Visualization
+### 📈 Phase 4 — BI Visualization & Dashboards
 
 - 🔹 **Top 10 Holdings**
 - 🔹 **Sector Exposure**
 - 🔹 **Top Expected Performers**
 
-
-
-
 ---
-
-
-
-
----
-
-
-#### 6. `6.Generate_Model_Portfolio.py`
-- Performs analytics on attributed stocks.
-- Optimizes for a model portfolio using statistical or ML-driven logic (e.g., Sharpe Ratio, Sortino Ratio, Minimum Variance, or custom scoring).
-- Portfolio output includes tickers, weights, and expected risk/return.
-
----
-### 📈 Phase 4 — Visualization & Dashboard
-
-#### 7. 
-
----
-
-
 
 ### 🆔 Project Info
 
