@@ -1,6 +1,6 @@
 ## 📈 End-to-End Financial Pipeline
 
-This project is an **End-to-end financial data pipeline** including -> ETL, data enhancement, portfolio optimization and BI visualization.
+This project is an **End-to-end financial data pipeline** including **ETL**, **Data enhancement**, **Portfolio optimization** and **BI visualization**.
 
 ## 🛠️ Tech Stack
 
@@ -33,8 +33,8 @@ This project is an **End-to-end financial data pipeline** including -> ETL, data
 
 ### 🧠 Phase 2 — Enhancement layer
 
- 🔹 Extract data from text using **Regex**
- 🔹 Create **Attribution / Rankings Table** (Value, Growth, Past Performance, Dividend, Health)
+🔹 Extract data from text using **Regex**  
+🔹 Create **Attribution / Rankings Table** (Value, Growth, Past Performance, Dividend, Health)
        
 
 | Step | Script Name                         | Description |
