@@ -2,39 +2,21 @@
 
 This project is an **end-to-end financial data pipeline** including -> ETL, data enhancement, portfolio optimization and BI visualization.
 
+## 🛠️ Tech Stack
+
+- **Languages**: Python, SQL  
+- **Libraries**: Pandas, Regex, Requests, SQLAlchemy/psycopg2  
+- **Database**: PostgreSQL  
+- **API**: SWS API
+
 ---
 
-## ⚙️ ETL
+### 📁 Phase 1 — ETL
 
 - 🔹 **Extract** from API via GraphQL query  
 - 🔹 **Transform** via Python/Pandas  
 - 🔹 **Load** into PostgreSQL database  
 
----
-
-## 🔍 Enhancement Layer
-
-- 🔹 Extract data from text using **Regex**
-- 🔹 Create **Attribution / Rankings Table**  
-  - Value, Growth, Past Performance, Dividend, Health
-
----
-
-## 🧠 Analytics & Portfolio Construction
-
-- 🔹 List **winners** based on attribution rankings  
-- 🔹 Calculate **stock weights** for **maximum Sharpe Ratio**
-
----
-
-## 📊 BI Dashboard Visualization
-
-- 🔹 **Top 10 Holdings**
-- 🔹 **Sector Exposure**
-- 🔹 **Top Expected Performers**
-
-
-### 📁 Phase 1 — ETL
 
 | Step | Script Name                         | Description |
 |------|-------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -48,7 +30,12 @@ This project is an **end-to-end financial data pipeline** including -> ETL, data
 | 8    | `8.Move_To_Prod.py`                 | - Move to data to Prod DB.
 
 ---
+
 ### 🧠 Phase 2 — Enhancement layer
+
+- 🔹 Extract data from text using **Regex**
+- 🔹 Create **Attribution / Rankings Table**  
+  - Value, Growth, Past Performance, Dividend, Health
 
 | Step | Script Name                         | Description |
 |------|-------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -58,7 +45,31 @@ This project is an **end-to-end financial data pipeline** including -> ETL, data
 | 4    | '4.Load_DB.py                       | - Load to DB
 
 ---
+
 ### 📊 Phase 3 — Analytics & Portfolio Construction
+
+
+- 🔹 List **winners** based on attribution rankings  
+- 🔹 Calculate **stock weights** for **maximum Sharpe Ratio**
+
+---
+
+## 📊 BI Dashboard Visualization
+
+- 🔹 **Top 10 Holdings**
+- 🔹 **Sector Exposure**
+- 🔹 **Top Expected Performers**
+
+
+
+
+---
+
+
+
+
+---
+
 
 #### 6. `6.Generate_Model_Portfolio.py`
 - Performs analytics on attributed stocks.
@@ -72,12 +83,7 @@ This project is an **end-to-end financial data pipeline** including -> ETL, data
 
 ---
 
-## 🛠️ Tech Stack
 
-- **Languages**: Python, SQL  
-- **Libraries**: Pandas, Regex, Requests, SQLAlchemy  
-- **Database**: PostgreSQL  
-- **API**: SWS API
 
 ### 🆔 Project Info
 
