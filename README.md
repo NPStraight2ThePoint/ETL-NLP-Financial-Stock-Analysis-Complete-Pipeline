@@ -75,7 +75,7 @@ This project is an **End-to-end financial data pipeline** including **ETL**, **D
 
 ### 🗂️ Project Workflow Overview
 
-![Workflow Chart](End To End Workflow.png)
+![End-to-End Workflow](End%20To%20End%20Workflow.png)
 
 
 ### 🆔 Project Info
