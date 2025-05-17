@@ -1,7 +1,7 @@
 import re
 import pandas as pd
 # Load CSV File
-df = pd.read_csv(r"C:\Users\nicho\PycharmProjects\Projects\API2SQL Pipelines\1.2 SimplyAPI_SQL_Pipeline\NLP\Statements NLP Prep2.csv" )  # Replace with actual file path
+df = pd.read_csv(r"C:\..\.csv" )  # Replace with actual file path
 # Updated regex patterns to support different currency symbols and handle spaces
 patterns = {
     "Tenure (years)": r"tenure of ([\d\.]+) years",
